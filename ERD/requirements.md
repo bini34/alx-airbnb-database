@@ -1,4 +1,3 @@
-erDiagram
     USER {
         UUID user_id PK
         VARCHAR first_name
@@ -57,7 +56,6 @@ erDiagram
         TIMESTAMP sent_at
     }
 
-    %% Relationships
     USER ||--o{ PROPERTY : "hosts"
     USER ||--o{ BOOKING : "makes"
     USER ||--o{ REVIEW : "writes"
